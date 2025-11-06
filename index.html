@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人網站</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#education">教育背景</a></li>
+                <li><a href="#experience">工作經驗</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">作品集</a></li>
+                <li><a href="#blog">部落格</a></li>
+                <li><a href="#interests">興趣愛好</a></li>
+                <li><a href="#contact">聯絡方式</a></li>
+            </ul>
+        </nav>
+        <div class="avatar-container">
+            <a href="#contact" title="聯絡我">
+                <img src="./images/avatar.jpg" alt="頭像" class="avatar">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>歡迎來到我的個人網站</h1>
+                <p>這裡是我展示自己專業技能和作品的空間</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>關於我</h2>
+            <div class="about-content">
+                <p>在這裡放入您的個人簡介，包括您的背景、興趣和目標。</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>教育背景</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <h3>澎湖科技大學</h3>
+                    <p class="degree">資訊工程系</p>
+                    <p class="year">2025 - 至今 （就讀中）</p>
+                    <p class="description">在學期間的重要成就、研究專案或獲得的獎項等。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>工作經驗</h2>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <h3>公司名稱</h3>
+                    <p class="position">職位名稱</p>
+                    <p class="year">2024 - 現在</p>
+                    <ul class="achievements">
+                        <li>重要成就或貢獻 1</li>
+                        <li>重要成就或貢獻 2</li>
+                        <li>重要成就或貢獻 3</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>專業技能</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>程式語言</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Ｃ/C++</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>開發工具</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>語言能力</h3>
+                    <ul>
+                        <li>中文（母語）</li>
+                        <li>英文（普通）</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>作品集</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>專案 1</h3>
+                    <p>專案描述</p>
+                </div>
+                <div class="project-card">
+                    <h3>專案 2</h3>
+                    <p>專案描述</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>部落格文章</h2>
+            <div class="blog-content">
+                <article class="blog-post">
+                    <h3>文章標題 1</h3>
+                    <p class="post-date">2025年11月1日</p>
+                    <p class="post-excerpt">這是文章的簡短摘要，描述文章的主要內容...</p>
+                    <a href="#" class="read-more">閱讀更多</a>
+                </article>
+                <article class="blog-post">
+                    <h3>文章標題 2</h3>
+                    <p class="post-date">2025年10月15日</p>
+                    <p class="post-excerpt">這是另一篇文章的簡短摘要，描述文章的主要內容...</p>
+                    <a href="#" class="read-more">閱讀更多</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="interests">
+            <h2>興趣愛好</h2>
+            <div class="interests-content">
+                <div class="interest-item">
+                    <h3>攝影</h3>
+                    <p>分享一些您的攝影作品和心得</p>
+                </div>
+                <div class="interest-item">
+                    <h3>閱讀</h3>
+                    <p>分享您最喜歡的書籍和閱讀心得</p>
+                </div>
+                <div class="interest-item">
+                    <h3>旅行</h3>
+                    <p>分享您的旅行經歷和照片</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>聯絡方式</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> 電子郵件：your.email@example.com</p>
+                    <p><i class="fab fa-linkedin"></i> LinkedIn：您的 LinkedIn 個人檔案連結</p>
+                    <p><i class="fab fa-github"></i> GitHub：您的 GitHub 個人檔案連結</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="您的姓名" required>
+                    <input type="email" placeholder="您的電子郵件" required>
+                    <textarea placeholder="您的訊息" required></textarea>
+                    <button type="submit">發送訊息</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 您的名字. All rights reserved.</p>
+    </footer>
+    <!-- 頂部右上角頭像容器（可替換 images/avatar.png） -->
+
+</body>
+
+</html>ß

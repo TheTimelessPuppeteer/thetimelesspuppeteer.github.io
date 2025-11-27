@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的個人網站</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/avatar.js" defer></script>
 </head>
-
 <body>
-    <header>
+        <header>
         <nav>
             <ul>
                 <li><a href="#about">關於我</a></li>
@@ -20,12 +20,17 @@
                 <li><a href="#blog">部落格</a></li>
                 <li><a href="#interests">興趣愛好</a></li>
                 <li><a href="#contact">聯絡方式</a></li>
-            </ul>
+            </ul> 
         </nav>
         <div class="avatar-container">
-            <a href="#contact" title="聯絡我">
-                <img src="./images/avatar.jpg" alt="頭像" class="avatar">
-            </a>
+            <div class="avatar-wrapper">
+                <img id="avatar" src="方源1.png" alt="我的頭像">
+                <label for="avatar-upload" class="avatar-upload-label">
+                    <i class="fas fa-camera"></i>
+                    更換頭像
+                </label>
+                <input type="file" id="avatar-upload" accept="image/*" style="display: none;">
+            </div>
         </div>
     </header>
 
@@ -48,9 +53,9 @@
             <h2>教育背景</h2>
             <div class="education-content">
                 <div class="education-item">
-                    <h3>澎湖科技大學</h3>
-                    <p class="degree">資訊工程系</p>
-                    <p class="year">2025 - 至今 （就讀中）</p>
+                    <h3>學校名稱</h3>
+                    <p class="degree">學位 - 主修科系</p>
+                    <p class="year">2020 - 2024</p>
                     <p class="description">在學期間的重要成就、研究專案或獲得的獎項等。</p>
                 </div>
             </div>
@@ -79,7 +84,8 @@
                     <h3>程式語言</h3>
                     <ul>
                         <li>Python</li>
-                        <li>Ｃ/C++</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
                     </ul>
                 </div>
                 <div class="skills-category">
@@ -87,13 +93,14 @@
                     <ul>
                         <li>Git</li>
                         <li>VS Code</li>
+                        <li>Docker</li>
                     </ul>
                 </div>
                 <div class="skills-category">
                     <h3>語言能力</h3>
                     <ul>
                         <li>中文（母語）</li>
-                        <li>英文（普通）</li>
+                        <li>英文（流利）</li>
                     </ul>
                 </div>
             </div>
@@ -170,8 +177,5 @@
     <footer>
         <p>&copy; 2025 您的名字. All rights reserved.</p>
     </footer>
-    <!-- 頂部右上角頭像容器（可替換 images/avatar.png） -->
-
 </body>
-
 </html>
